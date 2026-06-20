@@ -1,0 +1,63 @@
+# ─── MRI Data & Medical Files ───────────────────────────────
+data/raw/
+data/processed/
+data/external/
+*.dcm
+*.nii
+*.nii.gz
+*.mha
+*.nrrd
+*.img
+*.hdr
+
+# ─── Model Weights & Checkpoints ────────────────────────────
+models/
+checkpoints/
+*.pth
+*.pt
+*.onnx
+*.pkl
+*.h5
+*.pb
+
+# ─── Experiment Tracking ────────────────────────────────────
+wandb/
+mlruns/
+lightning_logs/
+runs/
+
+# ─── Python ─────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+.env
+.venv/
+venv/
+env/
+*.egg-info/
+dist/
+build/
+
+# ─── Jupyter Notebooks ──────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ─── IDE & OS ────────────────────────────────────────────────
+.vscode/
+.idea/
+*.DS_Store
+Thumbs.db
+desktop.ini
+
+# ─── Logs & Temp ────────────────────────────────────────────
+logs/
+*.log
+tmp/
+temp/
+.cache/
+
+# ─── Secrets ────────────────────────────────────────────────
+.env
+.env.local
+secrets.yaml
+api_keys.txt
