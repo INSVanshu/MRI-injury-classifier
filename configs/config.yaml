@@ -1,0 +1,41 @@
+# Project
+project_name: mri-injury-classifier
+experiment_name: baseline_resnet50
+
+# Data
+data:
+  raw_dir: data/raw
+  processed_dir: data/processed
+  planes:
+    - axial
+    - coronal
+    - sagittal
+  img_size: 224
+  train_split: 0.8
+
+# Model
+model:
+  architecture: resnet50
+  pretrained: true
+  num_classes: 3
+  dropout: 0.5
+
+# Training
+training:
+  epochs: 50
+  batch_size: 8
+  learning_rate: 0.0001
+  weight_decay: 0.01
+  patience: 10          # early stopping
+  device: cuda          # or cpu
+
+# Classes
+classes:
+  0: Normal
+  1: Sprain
+  2: Fracture
+
+# Logging
+wandb:
+  project: mri-injury-classifier
+  entity: your-wandb-username
