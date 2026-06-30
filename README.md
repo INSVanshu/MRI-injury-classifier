@@ -2,7 +2,6 @@
 
 > Deep learning model for automated classification of knee injuries from MRI scans — detecting **normal tissue**, **sprains** (ligament tears), and **fractures** with clinically interpretable Grad-CAM heatmaps.
 
-![Status](https://img.shields.io/badge/status-in%20progress-yellow)
 ![Python](https://img.shields.io/badge/python-3.10%2B-blue)
 ![PyTorch](https://img.shields.io/badge/framework-PyTorch-orange)
 ![License](https://img.shields.io/badge/license-MIT-green)
@@ -153,22 +152,6 @@ pip install -r requirements.txt
 jupyter notebook notebooks/01_eda.ipynb
 ```
 
----
-
-## Roadmap
-
-| Week | Focus | Status |
-|---|---|---|
-| 1 | Project setup, dataset download, EDA | 🚧 In progress |
-| 2 | Preprocessing pipeline (DICOM → tensor) | ⏳ Pending |
-| 3 | Baseline 2D CNN model | ⏳ Pending |
-| 4 | Transfer learning — ResNet50 fine-tune | ⏳ Pending |
-| 5 | Grad-CAM explainability | ⏳ Pending |
-| 6 | Evaluation & clinical metrics | ⏳ Pending |
-| 7 | Gradio demo | ⏳ Pending |
-| 8 | Final cleanup & documentation | ⏳ Pending |
-
----
 
 ## Disclaimer
 
@@ -178,7 +161,7 @@ This project is for **educational and research purposes only**. It is not intend
 
 ## License
 
-This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License 
 
 ---
 
@@ -186,8 +169,3 @@ This project is licensed under the MIT License — see the [LICENSE](LICENSE) fi
 
 - [Stanford ML Group](https://stanfordmlgroup.github.io/) for the MRNet dataset
 - [pytorch-grad-cam](https://github.com/jacobgil/pytorch-grad-cam) by Jacob Gildenblat
-- The open-source medical imaging community
-
----
-
-*Built as part of a Computer Vision & Machine Learning portfolio project.*
